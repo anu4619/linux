@@ -6,6 +6,11 @@
   * `date +%D` shows only date `05/27/25`
   * `date +%H:+%M` shows hours and minutes and so on...
 - `touch filename` : to create a file.
+- `ls` : lists files in the current directory.
+   * use `-lt` to get list of files with details,
+   * `-ltr` to get reverse order of latest modified files,
+   * use `-lh` to et file size in human readable form.
+- `clear` : clears the terminal ofc.
 
 ### Additional commands
 
