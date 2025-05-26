@@ -10,7 +10,7 @@
    * use `-lt` to get list of files with details,
    * `-ltr` to get reverse order of latest modified files,
    * use `-lh` to et file size in human readable form.
-- `clear` : clears the terminal ofc.
+- `clear` : clears the terminal ofc. or use `ctrl + l`
 
 ### Additional commands
 
