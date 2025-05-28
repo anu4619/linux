@@ -27,15 +27,18 @@
   * Enter `shift + :` to save file.
   * After `:` enter `wq` to save and exit.
 - `nano filename` : Esay alternative to vi command.
-- `cp fileA fileB` : Copies the content of fileA and makes another file fileB and paste the content there.
+- `cp fileA fileB` : Copies the content of fileA and makes another file fileB, and paste the content there.
 ### Working with Directories
 - `mkdir dirname` : make directory.
 - `rmdir` or `rm -rf dirname`: remove directory.
 - `cd dirname/dirname...` : change directory, jumping to new directory(s).
 - `cd ../..` : change directory, removing previous directory(s).
 - `cp filename /destination/path` : copy and paste files from one folder to another.
-  * `../folder` referes to a folder in previous folder.
+  * `../folder` refers to a folder in previous folder.
   * `.` refers to the current folder.
+- `mv filename /destination/dir` : Cut-paste a file from the current dir to the destination.
+- `mv fileA fileB` : Renames fileA to fileB.
+### Head and Tail Commands
 - 
 ### Additional commands
 
