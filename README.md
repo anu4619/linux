@@ -54,8 +54,28 @@
 - `sort -r filename` : sorts in reverse fashion.
 - `sort filename | uniq` : gives unique entries, removing duplicates.
 - `split -l 3 filename` : splits the content of the file into 3-3 lines files.
-### Grep, Egrep Commands
--
+### Grep(Global Regular Expression Print), Egrep Commands
+- `grep word filename` or `grep "word" filename` : searched the occurrences of word and prints it on terminal. More visibility thn less command.
+- `grep -i word filename` : -i removes case sensitivity.
+  * `-v` : print every line except the word.
+  * `-c` : if you want count of the occurences.
+  * `-w` or `-iw` : to match the exact match. normal grep will give same output for "word" and :wor", -w doesnot.
+  * `-n` : gives line no. of the word.
+- `grep -i word file1 file2 ...` : search accross multiples files and tells in which files.
+  * `-h` : to supress the file names of multiple files.
+  * `-e word1 -e word2` or `egrep word1|word2....`: search for multiple words.
+  * `-l` : to find only file name where word is located.
+  * `grep -f keyword.txt filename1 filename2 ....` or `grep -f keyword.txt * `: to get the keyword/pattern from a afile and match with another file.
+- `grep ^100 filename` : give every line starting with 100.
+- `grep er$ ` : endes with er.
+- `grep -R word dirA` : searches in all files in dirA.
+- `-q` : quick search does not return anything.
+- `ls grep -i abc` : returns all files starting with abc.
+- `ps -ef | grep ngnix` : searches ngnix in processess.
+- `pgrep ngnix` : returns the process ID.
+- `fgrep hello.world filename` : considers . as a normal ecpression not as a regular exp.
+- `zgrep word file.zip` : search in zip file.
+- `pdfgrep word file.pdf` : search in pdf file.
 ### Additional commands
 
 - `scp /local/file/path user@<ip-config>:/destination/path` : Secure Copy Protocol (SCP) used for file transfer between a local and remote server, or between two remote servers, using ssh.
