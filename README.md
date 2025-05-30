@@ -47,7 +47,15 @@
 - `mv filename /destination/dir` : Cut-paste a file from the current dir to the destination.
 - `mv fileA fileB` : Renames fileA to fileB.
 ### Head and Tail Commands
-- 
+- `head -lines filename` : if lines=5, it will output top 5 lines.
+- `tail -lines filename` : Displays bottom 5 lines.
+### Sort Commands
+- `sort filename` : sorts the content of the file.
+- `sort -r filename` : sorts in reverse fashion.
+- `sort filename | uniq` : gives unique entries, removing duplicates.
+- `split -l 3 filename` : splits the content of the file into 3-3 lines files.
+### Grep, Egrep Commands
+-
 ### Additional commands
 
 - `scp /local/file/path user@<ip-config>:/destination/path` : Secure Copy Protocol (SCP) used for file transfer between a local and remote server, or between two remote servers, using ssh.
