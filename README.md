@@ -33,6 +33,8 @@
   * After `:` enter `wq` to save and exit.
 - `nano filename` : Esay alternative to vi command.
 - `cp fileA fileB` : Copies the content of fileA and makes another file fileB, and paste the content there.
+- `shuf file` : shuffles content of file.
+- `wc -l file` : gives no. of lines in file.
 ### Working with Directories
 - `mkdir dirname` : make directory.
 - `rmdir` or `rm -rf dirname`: remove directory.
@@ -76,6 +78,9 @@
 - `fgrep hello.world filename` : considers . as a normal ecpression not as a regular exp.
 - `zgrep word file.zip` : search in zip file.
 - `pdfgrep word file.pdf` : search in pdf file.
+### Wild Cards in Linux
+- `ls x*` : gives files starting with x.
+- `touch file{1..10}` : makes 10 files file1 to file10.
 ### Additional commands
 
 - `scp /local/file/path user@<ip-config>:/destination/path` : Secure Copy Protocol (SCP) used for file transfer between a local and remote server, or between two remote servers, using ssh.
